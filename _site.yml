@@ -1,0 +1,21 @@
+name: "Sam Cooper, PhD"
+navbar:
+  title: "Sam Cooper, PhD"
+  left:
+    - text: "About"
+      href: index.html
+    - text: "CV"
+      href: https://docs.google.com/document/u/1/d/1SldleDb_AhA70YG2lC9bvojNgnqQXSPokj3dLNMhkGY/edit
+    - text: "Links"
+      href: links.html
+      
+  right: 
+    - icon: fa-envelope fa-lg
+      href: mailto:<samuel.e.cooper@gmail.com>
+    - icon: fa-github fa-lg
+      href: http://github.com/SamuelECooper/
+output:
+  html_document:
+    theme: flatly 
+    
+    
