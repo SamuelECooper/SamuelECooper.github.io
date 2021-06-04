@@ -1,0 +1,9 @@
+---
+title: "About"
+---
+
+<<<<<<< HEAD:index.Rmd
+under construction
+=======
+random
+>>>>>>> c2ea97d106977cbcbcf716ac3ae3ebbb9ce458f2:index.rmd
