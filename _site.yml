@@ -6,15 +6,23 @@ navbar:
       href: index.html
     - text: "CV"
       href: https://docs.google.com/document/d/1SldleDb_AhA70YG2lC9bvojNgnqQXSPokj3dLNMhkGY/edit?usp=sharing
+    - text: "Research"
+      href: research.html
+    - text: "R Stuff"
+      href: rstuff.html
     - text: "Links"
       href: links.html
   right: 
-    - icon: fa-envelope fa-lg
+    - icon: fa-envelope fa
       href: mailto:<samuel.e.cooper@gmail.com>
-    - icon: fa-github fa-lg
-      href: http://github.com/samuelecooper/
-    - icon: fa-scholar fa-lg
+    - icon: fas fa-graduation-cap
       href: https://scholar.google.com/citations?user=Th2llpQAAAAJ&hl=en
+    - icon: fab fa-researchgate
+      href: https://www.researchgate.net/profile/Samuel-Cooper-13
+    - icon: fa-github fa
+      href: http://github.com/samuelecooper/
 output:
   html_document:
     theme: flatly
+    toc: true
+    
