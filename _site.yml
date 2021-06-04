@@ -5,9 +5,15 @@ navbar:
     - text: "About"
       href: index.html
     - text: "CV"
-      href: https://docs.google.com/document/d/1SldleDb_AhA70YG2lC9bvojNgnqQXSPokj3dLNMhkGY/edit?usp=sharing
+      href: https://docs.google.com/document/d/1SldleDb_AhA70YG2lC9bvojNgnqQXSPokj3dLNMhkGY/edit?usp=sharing{:target="_bottom"}
     - text: "Research"
       href: research.html
+      menu:
+        - text: "Research"
+        - text: "Questions"
+          href: questions.html
+        - text: "Methods"
+          href: methods.html
     - text: "R Stuff"
       href: rstuff.html
     - text: "Links"
@@ -21,8 +27,13 @@ navbar:
       href: https://www.researchgate.net/profile/Samuel-Cooper-13
     - icon: fa-github fa
       href: http://github.com/samuelecooper/
+    - icon: fas fa-id-badge
+      href: https://orcid.org/0000-0001-9563-1750
+      
 output:
   html_document:
     theme: flatly
     toc: true
+    toc_float: true
+    toc_collapsed: false
     

@@ -2,16 +2,4 @@
 title: "Research"
 ---
 
-Under construction!
-
-# Experimental Psychopathology
-
-## Fear Conditioning
-
-## Maladaptive Avoidance
-
-# Quantitative Psychopathology
-
-## Structural Studies
-
-## 
+See the [Questions](questions.html) page for examples of research questions I have pursued, am currently pursuing, or hope to pursue in the future. See the [Methods](methods.html) page for an overview of the experimental and quantitative approaches I use.

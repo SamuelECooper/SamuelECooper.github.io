@@ -2,7 +2,7 @@
 title: "R Stuff"
 ---
 
-The R learning curve was tough for me, but worth it. Here are some resources that I found invaluable in learning R to facilitate my work, and continue to be go-to resources.
+The R learning curve was tough for me, but worth it. Here are some resources that I found invaluable in learning R to facilitate my data science, stats, and open science practices, and most of these continue to be go-to resources.
 
 # Free Resources
 

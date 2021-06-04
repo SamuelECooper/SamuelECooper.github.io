@@ -10,6 +10,8 @@ title: "Links"
 
 [Society for Psychophysiological Research (SPR)](https://sprweb.org/)
 
+[Society for the Improvement of Psychological Science (SIPS)](https://improvingpsych.org/)
+
 [Society for a Science of CLinical Psychology (SSCP)](http://www.sscpweb.org/)
 
 [Psychological Clinical Science Accreditation System (PCSAS)](https://www.pcsas.org/)
@@ -26,4 +28,16 @@ I received most of the my clinical training in the VA system, and thus naively t
 
 [Find an ACT Therapist](https://contextualscience.org/civicrm/profile?gid=17&reset=1&force=1)
 
-\
+# Professional Development
+
+Finding good information on applying to PhD programs in clinical psych can be tough. Below are resources I hope are helpful for those looking into that path:
+
+[Mitch Prinstein's Professional Development Resources](https://mitch.web.unc.edu/professional-development/)
+
+# Links for Random Endorsements
+
+*I have opinions. Some of those pertain to science-adjacent programs, apps, and techniques that a) could be helpful for others and b) the people behind these things deserve some unsolicited praise because they are great. Plus, it's my website so I can do what I want. All opinions and endorsements are my own and do not reflect those of UT or any other entity.*
+
+[Zotero](https://www.zotero.org/) is my reference manager of choice, and I highly recommend you give it a try. I have been a Zotero diehard for a while and this is my form of shouting my endorsement out from the tallest mountain.
+
+Scientific writing can be hard. The popular [Pomodoro Technique](en.wikipedia.org/wiki/Pomodoro_Technique) is my go-to for when I need to get serious about my writing. The [PomoDoneApp](https://pomodoneapp.com/), which I use in conjunction with [Todoist](todoist.com), is my preferred app solution for this technique, and I highly recommend it.
