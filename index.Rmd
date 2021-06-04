@@ -1,5 +1,5 @@
 ---
-title: "About"
+title: "About Sam (he/him)"
 ---
 
 <img src="images/frank%20and%20sam.jpg" align="right" width="150" height="150" style="padding: 10px"/> I received my PhD in clinical psychology from the University of Minnesota in 2019. Since then, I have been a postdoctoral fellow in the [Dunsmoor Lab](https://sites.utexas.edu/dunsmoorlab/) at the University of Texas at Austin in the Department of Psychiatry and Behavioral Sciences.
