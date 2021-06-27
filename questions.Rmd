@@ -10,7 +10,7 @@ title: "Questions"
 
 2.  Does degree of fear or avoidance generalization differ by gender, and what underlying psychological processes can help explain potential gender differences?
 
-3.  Does a novel experience, relative to a non-novel experience, promote maintenance of a weakly encoded fear memory if both the initial conditioning and novel experience share perceptual feature
+3.  Does a novel experience, relative to a non-novel experience, promote maintenance of a weakly encoded fear memory if both the initial conditioning and novel experience share perceptual feature?
 
 4.  What is the state of the evidence for conditioning models of OCD, and are deficits in acquisition and/or extinction of conditioned fear consistently found in the disorder?
 

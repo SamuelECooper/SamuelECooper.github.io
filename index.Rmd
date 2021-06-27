@@ -6,6 +6,10 @@ output:
     toc: false
 ---
 
+<meta name="description" content="personal website of Samuel Emerson Cooper, PhD. Clinical psychology, experimental and quantitative psychopathology, and neuroscience.">
+
+<meta name="author" content="Samuel Emerson Cooper">
+
 <img src="images/frank%20and%20sam.jpg" align="right" width="150" height="150" style="padding: 10px"/> I received my PhD in clinical psychology from the University of Minnesota's Clinical Psychopathology and Research Program in 2019. Since then, I have been a postdoctoral fellow in the [Dunsmoor Lab](https://sites.utexas.edu/dunsmoorlab/) at the University of Texas at Austin in the [Department of Psychiatry and Behavioral Sciences](https://dellmed.utexas.edu/units/department-of-psychiatry).
 
 I study human fear and anxiety, and their precipitants, mechanisms, and consequences. Although fear and anxiety are relevant for everyone, the majority of my work has particular relevance for PTSD and OCD. I largely use classical and instrumental conditioning paradigms as a framework for my research. Measurement modalities include psychophysiology, neuroimaging, eye-tracking, cognitive testing, and good old asking people about their thoughts, feelings, and experiences (i.e., interviews and questionnaires). More recently, I have become interested in using multivariate approaches to examine the structure of psychopathology, and then link that structure and more broadband personality individual differences to fear and anxiety mechanisms.

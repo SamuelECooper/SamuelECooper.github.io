@@ -29,9 +29,6 @@
        h6 {font-size: 12px;}
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
-<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
-<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
-<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -223,69 +220,6 @@ $(document).ready(function () {
 
 
 
-<style type="text/css">
-
-#TOC {
-  margin: 25px 0px 20px 0px;
-}
-@media (max-width: 768px) {
-#TOC {
-  position: relative;
-  width: 100%;
-}
-}
-
-@media print {
-.toc-content {
-  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
-  float: right;
-}
-}
-
-.toc-content {
-  padding-left: 30px;
-  padding-right: 40px;
-}
-
-div.main-container {
-  max-width: 1200px;
-}
-
-div.tocify {
-  width: 20%;
-  max-width: 260px;
-  max-height: 85%;
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  div.tocify {
-    width: 25%;
-  }
-}
-
-@media (max-width: 767px) {
-  div.tocify {
-    width: 100%;
-    max-width: none;
-  }
-}
-
-.tocify ul, .tocify li {
-  line-height: 20px;
-}
-
-.tocify-subheader .tocify-item {
-  font-size: 0.90em;
-}
-
-.tocify .list-group-item {
-  border-radius: 0px;
-}
-
-
-</style>
-
-
 
 </head>
 
@@ -293,16 +227,6 @@ div.tocify {
 
 
 <div class="container-fluid main-container">
-
-
-<!-- setup 3col/9col grid for toc_float and main content  -->
-<div class="row">
-<div class="col-xs-12 col-sm-4 col-md-3">
-<div id="TOC" class="tocify">
-</div>
-</div>
-
-<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -402,12 +326,10 @@ div.tocify {
 </div>
 
 
-<p>Outside of my work with Dr. Joseph Dunsmoor and in his lab, I collaborate on a variety of projects with other scientists. I continue to work with my primary graduate school adviser, <a href="https://angst.psych.umn.edu/">Dr. Shmuel Lissek</a>, and his <a href="https://angst.psych.umn.edu/people">graduate students</a>, as well as with my secondary adviser, <a href="https://cla.umn.edu/about/directory/profile/krueg038">Dr. Robert Krueger</a>. More recent collaborations include structural psychopathology work with Drs. <a href="https://campp.nd.edu/">David Watson</a> and <a href="https://www.knox.edu/academics/faculty/obrien-sara">Sara O’Brien</a>, biobehavioral trait measurement and prediction with <a href="https://patrickcnslab.psy.fsu.edu/">Dr. Chris Patrick</a> and <a href="https://patrickcnslab.psy.fsu.edu/wiki/index.php/Emily_Perkins">Emily Perkins</a>, and forays into affiliated fields, including global mental health with <a href="https://www.mhinnovation.net/profile/daniel-lakin">Dr. Dan Lakin</a>.</p>
+<p>Outside of my work with <a href="https://sites.utexas.edu/dunsmoorlab/">Dr. Joseph Dunsmoor</a> and in his lab, I collaborate on a variety of projects with other scientists. I continue to work with my primary graduate school adviser, <a href="https://angst.psych.umn.edu/">Dr. Shmuel Lissek</a>, and his <a href="https://angst.psych.umn.edu/people">graduate students</a>, as well as with my secondary adviser, <a href="https://cla.umn.edu/about/directory/profile/krueg038">Dr. Robert Krueger</a>. More recent collaborations include structural psychopathology work with Drs. <a href="https://campp.nd.edu/">David Watson</a> and <a href="https://www.knox.edu/academics/faculty/obrien-sara">Sara O’Brien</a>, biobehavioral trait measurement and prediction with <a href="https://patrickcnslab.psy.fsu.edu/">Dr. Chris Patrick</a> and <a href="https://patrickcnslab.psy.fsu.edu/wiki/index.php/Emily_Perkins">Emily Perkins</a>, and forays into affiliated fields, including global mental health with <a href="https://www.mhinnovation.net/profile/daniel-lakin">Dr. Dan Lakin</a>.</p>
 
 
 
-</div>
-</div>
 
 </div>
 
@@ -440,35 +362,6 @@ $(document).ready(function () {
 
 <!-- code folding -->
 
-<script>
-$(document).ready(function ()  {
-
-    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
-    $('.unlisted.unnumbered').addClass('toc-ignore')
-
-    // move toc-ignore selectors from section div to header
-    $('div.section.toc-ignore')
-        .removeClass('toc-ignore')
-        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
-
-    // establish options
-    var options = {
-      selectors: "h1,h2,h3",
-      theme: "bootstrap3",
-      context: '.toc-content',
-      hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
-      },
-      ignoreSelector: ".toc-ignore",
-      scrollTo: 0
-    };
-    options.showAndHide = true;
-    options.smoothScroll = true;
-
-    // tocify
-    var toc = $("#TOC").tocify(options).data("toc-tocify");
-});
-</script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
