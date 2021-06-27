@@ -1,5 +1,9 @@
 ---
 title: "Questions"
+output:
+  html_document:
+    theme: flatly
+    toc: false
 ---
 
 *-work in progress!-*
