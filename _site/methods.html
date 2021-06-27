@@ -13,7 +13,7 @@
 
 <title>Methods</title>
 
-<script src="site_libs/header-attrs-2.8/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.9/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
@@ -320,6 +320,12 @@ div.tocify {
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
+  <a>
+    <span class="fas fa-bolt"></span>
+     
+  </a>
+</li>
+<li>
   <a href="index.html">About</a>
 </li>
 <li>
@@ -339,6 +345,9 @@ div.tocify {
     <li>
       <a href="methods.html">Methods</a>
     </li>
+    <li>
+      <a href="collabs.html">Collaborators</a>
+    </li>
   </ul>
 </li>
 <li>
@@ -351,7 +360,7 @@ div.tocify {
       <ul class="nav navbar-nav navbar-right">
         <li>
   <a href="mailto:&lt;samuel.e.cooper@gmail.com&gt;">
-    <span class="fas fa-envelope fa"></span>
+    <span class="fa fa-envelope fa"></span>
      
   </a>
 </li>
@@ -369,7 +378,7 @@ div.tocify {
 </li>
 <li>
   <a href="http://github.com/samuelecooper/">
-    <span class="fas fa-github fa"></span>
+    <span class="fa fa-github fa"></span>
      
   </a>
 </li>
@@ -393,24 +402,18 @@ div.tocify {
 </div>
 
 
-<p><em>Under construction</em></p>
+<p>Part of the fun of my day-to-day work is the variety of interesting and useful methodological techniques I get to use. Below are the methods I most commonly use and with which I have some degree of competency.</p>
 <div id="experimental-psychopathology" class="section level1">
 <h1>Experimental Psychopathology</h1>
-<div id="fear-conditioning" class="section level2">
-<h2>Fear Conditioning</h2>
-</div>
-<div id="instrumental-conditioning" class="section level2">
-<h2>Instrumental Conditioning</h2>
-</div>
+<p>Most of my work involves the building and implementation of experimental tasks that probe psychopathologically-relevant processes. In particular, I make use of <strong>classical and instrumental conditioning paradigms</strong> to study the emotions and behaviors. Given my interests, most of the time I am using these techniques to study <strong>fear and avoidance</strong>. In these tasks, I pair an inherently aversive stimulus (e.g., mild electric stimulation) with a neutral stimulus (e.g., a generic picture or sound) until the neutral stimulus is no longer neutral - it now provokes a negative emotional or behavioral response without any help from the original aversive stimulus. These responses, formally known as <strong>conditioned responses</strong>, are what I measure and what are thought to underlie the distress and impairment seen in many forms of anxiety.</p>
+<p><em>–A fancy picture from a paper will be in this spot soon!–</em></p>
+<p>There are many ways to measure conditioned responses. I primarily use <strong>self-report</strong> and <strong>physiological</strong> (e.g., <strong>startle blink, sweat response, heart rate</strong>) measures. In the past I have also used <strong>eye-tracking</strong> and <strong>pupilometry</strong> to assess attentional and arousal conditioned responses, and I hope to return to these methods in the future. I also currently oversee a study using <strong>virtual reality (VR)</strong> technology to modulate retention of fear learning. Finally, a major goal of my postdoc is to gain substantial experience in <strong>functional magnetic resonance imaging (fMRI)</strong>, a neuroimaging technique that allows us to assess conditioned responding at the level of the brain and its constituent circuits.</p>
 </div>
 <div id="quantitative-psychopathology" class="section level1">
 <h1>Quantitative Psychopathology</h1>
-<div id="structural-studies" class="section level2">
-<h2>Structural Studies</h2>
-</div>
-<div id="linking-latent-trait-dimensions-to-behavioral-processes" class="section level2">
-<h2>Linking Latent Trait Dimensions to Behavioral Processes</h2>
-</div>
+<p>Although experimental work is the core of my work, it’s in combination with individual differences sciences that allows it to provide answers to scientific questions regarding the nature, development, and treatment of psychopathology. In particular, I use <strong>dimensional</strong> models of psychopathology - which treat mental illness as just the extreme or less common part of a continuum of human behavior and internal processes, as opposed to qualitatively distinct categories - to understand how pathological processes differ across and within people. Part of this work involves understanding how psychopathology is organized and structured in the first place. Recent work has involved using dimension <strong>reduction techniques</strong> (e.g., exploratory factor analysis, mixture modeling) to more precisely capture the underlying psychological dimensions that span a variety of symptoms or conditions, specifically those commonly defined as anxiety-related disorders. This work is inspired by and aligns with the <a href="https://renaissance.stonybrookmedicine.edu/HITOP">Hierarchical Taxonomy of Psychopathology (HiTOP)</a>, an effort to improve our models of psychopathology.</p>
+<p><em>–Again a fancy picture from a paper will be in this spot soon!–</em></p>
+<p>Linking psychopathological individual differences to purportedly psychopathological processes, as measured by experimental tasks, can require a complex statistical framework to facilitate meaningful and robust inferences. <strong>Mixed effects regression</strong>s(sometimes referred to as multilevel modeling) are a major part of my work and I continue to train in advanced applications of these models, including mediation frameworks and non-linear modeling. I also have training in using <strong>structural equation modeling (SEM)</strong>techniques, which provides a framework for understanding complex relations between both observed/measured variables and <em>latent</em> or unmeasuredvariables. Using these types of techniques allows us to test hypotheses that fully appreciate the complex systems typically involved in the psychological and biological processes that contribute to psychopathology.</p>
 </div>
 
 
@@ -451,6 +454,9 @@ $(document).ready(function () {
 
 <script>
 $(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
 
     // move toc-ignore selectors from section div to header
     $('div.section.toc-ignore')

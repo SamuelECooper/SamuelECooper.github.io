@@ -13,7 +13,7 @@
 
 <title>Questions</title>
 
-<script src="site_libs/header-attrs-2.8/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.9/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
@@ -320,6 +320,12 @@ div.tocify {
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
+  <a>
+    <span class="fas fa-bolt"></span>
+     
+  </a>
+</li>
+<li>
   <a href="index.html">About</a>
 </li>
 <li>
@@ -339,6 +345,9 @@ div.tocify {
     <li>
       <a href="methods.html">Methods</a>
     </li>
+    <li>
+      <a href="collabs.html">Collaborators</a>
+    </li>
   </ul>
 </li>
 <li>
@@ -351,7 +360,7 @@ div.tocify {
       <ul class="nav navbar-nav navbar-right">
         <li>
   <a href="mailto:&lt;samuel.e.cooper@gmail.com&gt;">
-    <span class="fas fa-envelope fa"></span>
+    <span class="fa fa-envelope fa"></span>
      
   </a>
 </li>
@@ -369,7 +378,7 @@ div.tocify {
 </li>
 <li>
   <a href="http://github.com/samuelecooper/">
-    <span class="fas fa-github fa"></span>
+    <span class="fa fa-github fa"></span>
      
   </a>
 </li>
@@ -393,7 +402,15 @@ div.tocify {
 </div>
 
 
-<p><em>Under construction</em></p>
+<p><em>-work in progress!-</em></p>
+<p><u>Examples of recent scientific questions include:</u></p>
+<ol style="list-style-type: decimal">
+<li><p>How do patterns of generalized fear and avoidance, and their covariation, relate to adaptive and maladaptive personality structure?</p></li>
+<li><p>Does degree of fear or avoidance generalization differ by gender, and what underlying psychological processes can help explain potential gender differences?</p></li>
+<li><p>Does a novel experience, relative to a non-novel experience, promote maintenance of a weakly encoded fear memory if both the initial conditioning and novel experience share perceptual feature</p></li>
+<li><p>What is the state of the evidence for conditioning models of OCD, and are deficits in acquisition and/or extinction of conditioned fear consistently found in the disorder?</p></li>
+<li><p>Can we reliably place OCD symptoms within a larger framework of adaptive personality and psychopathology, such that these symptoms can be identified as a constituent of the larger framework?</p></li>
+</ol>
 
 
 
@@ -433,6 +450,9 @@ $(document).ready(function () {
 
 <script>
 $(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
 
     // move toc-ignore selectors from section div to header
     $('div.section.toc-ignore')

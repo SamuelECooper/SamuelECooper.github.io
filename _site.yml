@@ -1,7 +1,8 @@
 name: "Sam Cooper PhD"
 navbar:
-  title: "Sam Cooper PhD"
+  title: "Sam Cooper PhD" 
   left:
+    - icon: fas fa-bolt
     - text: "About"
       href: index.html
     - text: "CV"
@@ -14,6 +15,8 @@ navbar:
           href: questions.html
         - text: "Methods"
           href: methods.html
+        - text: "Collaborators"
+          href: collabs.html
     - text: "R Stuff"
       href: rstuff.html
     - text: "Links"

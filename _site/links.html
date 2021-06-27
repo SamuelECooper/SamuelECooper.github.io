@@ -13,7 +13,7 @@
 
 <title>Links</title>
 
-<script src="site_libs/header-attrs-2.8/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.9/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
@@ -320,6 +320,12 @@ div.tocify {
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
+  <a>
+    <span class="fas fa-bolt"></span>
+     
+  </a>
+</li>
+<li>
   <a href="index.html">About</a>
 </li>
 <li>
@@ -339,6 +345,9 @@ div.tocify {
     <li>
       <a href="methods.html">Methods</a>
     </li>
+    <li>
+      <a href="collabs.html">Collaborators</a>
+    </li>
   </ul>
 </li>
 <li>
@@ -351,7 +360,7 @@ div.tocify {
       <ul class="nav navbar-nav navbar-right">
         <li>
   <a href="mailto:&lt;samuel.e.cooper@gmail.com&gt;">
-    <span class="fas fa-envelope fa"></span>
+    <span class="fa fa-envelope fa"></span>
      
   </a>
 </li>
@@ -369,7 +378,7 @@ div.tocify {
 </li>
 <li>
   <a href="http://github.com/samuelecooper/">
-    <span class="fas fa-github fa"></span>
+    <span class="fa fa-github fa"></span>
      
   </a>
 </li>
@@ -396,11 +405,13 @@ div.tocify {
 <div id="science" class="section level1">
 <h1>Science</h1>
 <p><a href="https://www.psychologicalscience.org/">Association for Psychological Science (APS)</a></p>
+<p><a href="adaa.org">Anxiety and Depression Association of America (ADAA)</a></p>
 <p><a href="https://psychopathology.org/">Society for Research in Psychopathology (SRP)</a></p>
 <p><a href="https://sprweb.org/">Society for Psychophysiological Research (SPR)</a></p>
 <p><a href="https://improvingpsych.org/">Society for the Improvement of Psychological Science (SIPS)</a></p>
-<p><a href="http://www.sscpweb.org/">Society for a Science of CLinical Psychology (SSCP)</a></p>
+<p><a href="http://www.sscpweb.org/">Society for a Science of Clinical Psychology (SSCP)</a></p>
 <p><a href="https://www.pcsas.org/">Psychological Clinical Science Accreditation System (PCSAS)</a></p>
+<p><a href="https://renaissance.stonybrookmedicine.edu/HITOP">Hierarchical Taxonomy of Psychopathology (HiTOP)</a></p>
 </div>
 <div id="mental-health" class="section level1">
 <h1>Mental Health</h1>
@@ -409,6 +420,7 @@ div.tocify {
 <p><a href="https://www.abct.org/Help/?m=mFindHelp&amp;fa=dFindHelp">Association for Behavioral and Cognitive Therapies: Find Help</a></p>
 <p><a href="https://cptforptsd.com/cpt-provider-roster/">Cognitive Processing Therapy Provider Roster</a></p>
 <p><a href="https://contextualscience.org/civicrm/profile?gid=17&amp;reset=1&amp;force=1">Find an ACT Therapist</a></p>
+<p><a href="https://istss.org/public-resources">International Society for Traumatic Stress Studies: Public Resources</a></p>
 </div>
 <div id="professional-development" class="section level1">
 <h1>Professional Development</h1>
@@ -419,7 +431,7 @@ div.tocify {
 <h1>Links for Random Endorsements</h1>
 <p><em>I have opinions. Some of those pertain to science-adjacent programs, apps, and techniques that a) could be helpful for others and b) the people behind these things deserve some unsolicited praise because they are great. Plus, it’s my website so I can do what I want. All opinions and endorsements are my own and do not reflect those of UT or any other entity.</em></p>
 <p><a href="https://www.zotero.org/">Zotero</a> is my reference manager of choice, and I highly recommend you give it a try. I have been a Zotero diehard for a while and this is my form of shouting my endorsement out from the tallest mountain.</p>
-<p>Scientific writing can be hard. The popular <a href="en.wikipedia.org/wiki/Pomodoro_Technique">Pomodoro Technique</a> is my go-to for when I need to get serious about my writing. The <a href="https://pomodoneapp.com/">PomoDoneApp</a>, which I use in conjunction with <a href="todoist.com">Todoist</a>, is my preferred app solution for this technique, and I highly recommend it.</p>
+<p>Scientific writing can be hard. The popular <a href="http://en.wikipedia.org/wiki/Pomodoro_Technique">Pomodoro Technique</a> is my go-to for when I need to get serious about my writing. The <a href="https://pomodoneapp.com/">PomoDoneApp</a>, which I use in conjunction with <a href="todoist.com">Todoist</a>, is my preferred app solution for this technique, and I highly recommend it.</p>
 </div>
 
 
@@ -460,6 +472,9 @@ $(document).ready(function () {
 
 <script>
 $(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
 
     // move toc-ignore selectors from section div to header
     $('div.section.toc-ignore')
