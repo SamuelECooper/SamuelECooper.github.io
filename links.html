@@ -11,7 +11,7 @@
 
 
 
-<title>About Sam (he/him)</title>
+<title>Links</title>
 
 <script src="site_libs/header-attrs-2.9/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
@@ -29,6 +29,9 @@
        h6 {font-size: 12px;}
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -220,6 +223,69 @@ $(document).ready(function () {
 
 
 
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
 
 </head>
 
@@ -227,6 +293,16 @@ $(document).ready(function () {
 
 
 <div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -321,28 +397,47 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">About Sam (he/him)</h1>
+<h1 class="title toc-ignore">Links</h1>
 
 </div>
 
 
-<head>
-<title>
-<p>Sam Cooper PhD</p>
-</title>
-<meta name="description" content="personal-professional website of Samuel Emerson Cooper, PhD.">
-<meta name="keywords" content="clinical psychology, neuroscience, psychopathology, anxiety, fear, conditioning, PTSD, quantitative methods, clinical science, fear generalization">
-<meta name="author" content="Samuel Emerson Cooper">
-<meta name="robots" content="index,follow">
-</head>
-<p><img src="images/frank%20and%20sam.jpg" align="right" width="150" height="150" style="padding: 10px"/> I received my PhD in clinical psychology from the University of Minnesota’s Clinical Psychopathology and Research Program in 2019. Since then, I have been a postdoctoral fellow in the <a href="https://sites.utexas.edu/dunsmoorlab/">Dunsmoor Lab</a> at the University of Texas at Austin in the <a href="https://dellmed.utexas.edu/units/department-of-psychiatry">Department of Psychiatry and Behavioral Sciences</a>.</p>
-<p>I study human fear and anxiety, and their precipitants, mechanisms, and consequences. Although fear and anxiety are relevant for everyone, the majority of my work has particular relevance for PTSD and OCD. I largely use classical and instrumental conditioning paradigms as a framework for my research. Measurement modalities include psychophysiology, neuroimaging, eye-tracking, cognitive testing, and good old asking people about their thoughts, feelings, and experiences (i.e., interviews and questionnaires). More recently, I have become interested in using multivariate approaches to examine the structure of psychopathology, and then link that structure and more broadband personality individual differences to fear and anxiety mechanisms.</p>
-<p>You can find links to my <a href="https://docs.google.com/document/d/1SldleDb_AhA70YG2lC9bvojNgnqQXSPokj3dLNMhkGY/edit?usp=sharing">CV</a>, <a href="mailto:%3Csamuel.e.cooper@gmail.com%3E">email</a>, and various academic and open science profiles on the navbar above. For more detail on research interests and publications (plus much more jargon!), see the the research <a href="questions.html">Questions</a> and <a href="methods.html">Methods</a> pages.</p>
-<p><em>All recommendations and opinions are my own and do not necessarily reflect those of academic institutions with which I am affiliated.</em></p>
-<p><em>© Samuel Emerson Cooper 2021</em></p>
+<div id="science" class="section level1">
+<h1>Science</h1>
+<p><a href="https://www.psychologicalscience.org/">Association for Psychological Science (APS)</a></p>
+<p><a href="adaa.org">Anxiety and Depression Association of America (ADAA)</a></p>
+<p><a href="https://psychopathology.org/">Society for Research in Psychopathology (SRP)</a></p>
+<p><a href="https://sprweb.org/">Society for Psychophysiological Research (SPR)</a></p>
+<p><a href="https://improvingpsych.org/">Society for the Improvement of Psychological Science (SIPS)</a></p>
+<p><a href="http://www.sscpweb.org/">Society for a Science of Clinical Psychology (SSCP)</a></p>
+<p><a href="https://www.pcsas.org/">Psychological Clinical Science Accreditation System (PCSAS)</a></p>
+<p><a href="https://renaissance.stonybrookmedicine.edu/HITOP">Hierarchical Taxonomy of Psychopathology (HiTOP)</a></p>
+</div>
+<div id="mental-health" class="section level1">
+<h1>Mental Health</h1>
+<p>I received most of the my clinical training in the VA system, and thus naively thought it was straightforward for find science-based mental health services everywhere (i.e., outside of the VA). I was wrong. Below are some links to help with that.</p>
+<p><a href="https://adaa.org/find-help">Anxiety and Depression Association of America: Find Help</a></p>
+<p><a href="https://www.abct.org/Help/?m=mFindHelp&amp;fa=dFindHelp">Association for Behavioral and Cognitive Therapies: Find Help</a></p>
+<p><a href="https://cptforptsd.com/cpt-provider-roster/">Cognitive Processing Therapy Provider Roster</a></p>
+<p><a href="https://contextualscience.org/civicrm/profile?gid=17&amp;reset=1&amp;force=1">Find an ACT Therapist</a></p>
+<p><a href="https://istss.org/public-resources">International Society for Traumatic Stress Studies: Public Resources</a></p>
+</div>
+<div id="professional-development" class="section level1">
+<h1>Professional Development</h1>
+<p>Finding good information on applying to PhD programs in clinical psych can be tough. Below are resources I hope are helpful for those looking into that path:</p>
+<p><a href="https://mitch.web.unc.edu/professional-development/">Mitch Prinstein’s Professional Development Resources</a></p>
+</div>
+<div id="links-for-random-endorsements" class="section level1">
+<h1>Links for Random Endorsements</h1>
+<p><em>I have opinions. Some of those pertain to science-adjacent programs, apps, and techniques that a) could be helpful for others and b) the people behind these things deserve some unsolicited praise because they are great. Plus, it’s my website so I can do what I want. All opinions and endorsements are my own and do not reflect those of UT or any other entity.</em></p>
+<p><a href="https://www.zotero.org/">Zotero</a> is my reference manager of choice, and I highly recommend you give it a try. I have been a Zotero diehard for a while and this is my form of shouting my endorsement out from the tallest mountain.</p>
+<p>Scientific writing can be hard. The popular <a href="http://en.wikipedia.org/wiki/Pomodoro_Technique">Pomodoro Technique</a> is my go-to for when I need to get serious about my writing. The <a href="https://pomodoneapp.com/">PomoDoneApp</a>, which I use in conjunction with <a href="todoist.com">Todoist</a>, is my preferred app solution for this technique, and I highly recommend it.</p>
+</div>
 
 
 
+</div>
+</div>
 
 </div>
 
@@ -375,6 +470,35 @@ $(document).ready(function () {
 
 <!-- code folding -->
 
+<script>
+$(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

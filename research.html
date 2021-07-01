@@ -11,7 +11,7 @@
 
 
 
-<title>About Sam (he/him)</title>
+<title>Research</title>
 
 <script src="site_libs/header-attrs-2.9/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
@@ -29,6 +29,9 @@
        h6 {font-size: 12px;}
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -220,6 +223,69 @@ $(document).ready(function () {
 
 
 
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
 
 </head>
 
@@ -227,6 +293,16 @@ $(document).ready(function () {
 
 
 <div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -321,28 +397,17 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">About Sam (he/him)</h1>
+<h1 class="title toc-ignore">Research</h1>
 
 </div>
 
 
-<head>
-<title>
-<p>Sam Cooper PhD</p>
-</title>
-<meta name="description" content="personal-professional website of Samuel Emerson Cooper, PhD.">
-<meta name="keywords" content="clinical psychology, neuroscience, psychopathology, anxiety, fear, conditioning, PTSD, quantitative methods, clinical science, fear generalization">
-<meta name="author" content="Samuel Emerson Cooper">
-<meta name="robots" content="index,follow">
-</head>
-<p><img src="images/frank%20and%20sam.jpg" align="right" width="150" height="150" style="padding: 10px"/> I received my PhD in clinical psychology from the University of Minnesota’s Clinical Psychopathology and Research Program in 2019. Since then, I have been a postdoctoral fellow in the <a href="https://sites.utexas.edu/dunsmoorlab/">Dunsmoor Lab</a> at the University of Texas at Austin in the <a href="https://dellmed.utexas.edu/units/department-of-psychiatry">Department of Psychiatry and Behavioral Sciences</a>.</p>
-<p>I study human fear and anxiety, and their precipitants, mechanisms, and consequences. Although fear and anxiety are relevant for everyone, the majority of my work has particular relevance for PTSD and OCD. I largely use classical and instrumental conditioning paradigms as a framework for my research. Measurement modalities include psychophysiology, neuroimaging, eye-tracking, cognitive testing, and good old asking people about their thoughts, feelings, and experiences (i.e., interviews and questionnaires). More recently, I have become interested in using multivariate approaches to examine the structure of psychopathology, and then link that structure and more broadband personality individual differences to fear and anxiety mechanisms.</p>
-<p>You can find links to my <a href="https://docs.google.com/document/d/1SldleDb_AhA70YG2lC9bvojNgnqQXSPokj3dLNMhkGY/edit?usp=sharing">CV</a>, <a href="mailto:%3Csamuel.e.cooper@gmail.com%3E">email</a>, and various academic and open science profiles on the navbar above. For more detail on research interests and publications (plus much more jargon!), see the the research <a href="questions.html">Questions</a> and <a href="methods.html">Methods</a> pages.</p>
-<p><em>All recommendations and opinions are my own and do not necessarily reflect those of academic institutions with which I am affiliated.</em></p>
-<p><em>© Samuel Emerson Cooper 2021</em></p>
+<p>See the <a href="questions.html">Questions</a> page for examples of research questions I have pursued, am currently pursuing, or hope to pursue in the future. See the <a href="methods.html">Methods</a> page for an overview of the experimental and quantitative approaches I use. See the <a href="collabs.html">Collaborators</a> page for links to people outside my current lab with which I do science!</p>
 
 
 
+</div>
+</div>
 
 </div>
 
@@ -375,6 +440,35 @@ $(document).ready(function () {
 
 <!-- code folding -->
 
+<script>
+$(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
