@@ -24,6 +24,8 @@ navbar:
   right: 
     - icon: fa-envelope fa
       href: mailto:<samuel.e.cooper@gmail.com>
+    - icon: fa-twitter fa
+      href: https://twitter.com/samcooper_phd
     - icon: fas fa-graduation-cap
       href: https://scholar.google.com/citations?user=Th2llpQAAAAJ&hl=en
     - icon: fab fa-researchgate

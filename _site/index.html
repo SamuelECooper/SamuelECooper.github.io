@@ -13,8 +13,8 @@
 
 <title>About Sam (he/him)</title>
 
-<script src="site_libs/header-attrs-2.9/header-attrs.js"></script>
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.12/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
@@ -62,6 +62,7 @@ if (window.hljs) {
 
 
 
+
 <style type = "text/css">
 .main-container {
   max-width: 940px;
@@ -82,6 +83,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -234,7 +238,7 @@ $(document).ready(function () {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -256,7 +260,7 @@ $(document).ready(function () {
   <a href="https://docs.google.com/document/d/1SldleDb_AhA70YG2lC9bvojNgnqQXSPokj3dLNMhkGY/edit?usp=sharing{:target=&quot;_bottom&quot;}">CV</a>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Research
      
     <span class="caret"></span>
@@ -285,6 +289,12 @@ $(document).ready(function () {
         <li>
   <a href="mailto:&lt;samuel.e.cooper@gmail.com&gt;">
     <span class="fa fa-envelope fa"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://twitter.com/samcooper_phd">
+    <span class="fa fa-twitter fa"></span>
      
   </a>
 </li>
@@ -336,9 +346,9 @@ $(document).ready(function () {
 <meta name="robots" content="index,follow">
 </head>
 <p><img src="images/frank%20and%20sam.jpg" align="right" width="150" height="150" style="padding: 10px"/> I received my PhD in clinical psychology from the University of Minnesota’s Clinical Psychopathology and Research Program in 2019. Since then, I have been a postdoctoral fellow in the <a href="https://sites.utexas.edu/dunsmoorlab/">Dunsmoor Lab</a> at the University of Texas at Austin in the <a href="https://dellmed.utexas.edu/units/department-of-psychiatry">Department of Psychiatry and Behavioral Sciences</a>.</p>
-<p>I study human fear and anxiety, and their precipitants, mechanisms, and consequences. Although fear and anxiety are relevant for everyone, the majority of my work has particular relevance for PTSD and OCD. I largely use classical and instrumental conditioning paradigms as a framework for my research. Measurement modalities include psychophysiology, neuroimaging, eye-tracking, cognitive testing, and good ol’ asking people about their thoughts, feelings, and experiences (i.e., interviews and questionnaires). More recently, I have become interested in using multivariate approaches to examine the structure of psychopathology, and then link that structure and broadband personality individual differences to neurobehavioral fear and anxiety mechanisms.</p>
+<p>I study human fear and anxiety, and their precipitants, mechanisms, and consequences. Although fear and anxiety are relevant for everyone, the majority of my work has particular relevance for PTSD and OCD. I largely use classical and instrumental conditioning paradigms as a framework for my research. Measurement modalities include psychophysiology, neuroimaging, eye-tracking, cognitive testing, and good ol’ asking people about their thoughts, feelings, and experiences (i.e., interviews and questionnaires). More recently, I have become interested in using multivariate approaches to examine the structure of psychopathology, and then link that structure and broadband personality individual differences to neurobehavioral fear and anxiety mechanisms. Relatedly, I am a member of the <a href="https://renaissance.stonybrookmedicine.edu/">Hierarchical Taxonomy of Psychopathology (HiTOP)</a> consortium, which works to advance the empirical classification of psychopathology using quantitative techniques.</p>
 <p>I am currently supported by an NRSA (F32) fellowship from NIMH. This fellowship provides training in multivariate fMRI analyses and episodic memory tasks to facilitate my investigations into higher-order/abstract forms of fear generalization in anxiety-related disorders.</p>
-<p>You can find links to my <a href="https://docs.google.com/document/d/1SldleDb_AhA70YG2lC9bvojNgnqQXSPokj3dLNMhkGY/edit?usp=sharing">CV</a>, <a href="mailto:%3Csamuel.e.cooper@gmail.com%3E">email</a>, and various academic and open science profiles on the navbar above. For more detail on research interests and publications (plus much more jargon!), see the the research <a href="questions.html">Questions</a> and <a href="methods.html">Methods</a> pages.</p>
+<p>You can find links to my <a href="https://docs.google.com/document/d/1SldleDb_AhA70YG2lC9bvojNgnqQXSPokj3dLNMhkGY/edit?usp=sharing">CV</a>, <a href="mailto:%3Csamuel.e.cooper@gmail.com%3E">email</a>, <a href="https://twitter.com/samcooper_phd">Twitter</a>, and various academic and open science profiles on the navbar above. For more detail on research interests and publications (plus much more jargon!), see the the research <a href="questions.html">Questions</a> and <a href="methods.html">Methods</a> pages.</p>
 <p><em>All recommendations and opinions are my own and do not necessarily reflect those of academic institutions with which I am affiliated.</em></p>
 <p><em>© Samuel Emerson Cooper 2021</em></p>
 
