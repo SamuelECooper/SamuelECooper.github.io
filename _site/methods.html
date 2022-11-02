@@ -13,7 +13,7 @@
 
 <title>Methods</title>
 
-<script src="site_libs/header-attrs-2.12/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.16/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
@@ -146,11 +146,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -412,22 +416,91 @@ div.tocify {
 </div>
 
 
-<p>Part of the fun of my day-to-day work is the variety of interesting and useful methodological techniques I get to use. Below are the methods I most commonly use and with which I have some degree of competency.</p>
+<p>Part of the fun of my day-to-day work is the variety of interesting
+and useful methodological techniques I get to use. Below are the methods
+I most commonly use and with which I have some degree of competency.</p>
 <div id="experimental-psychopathology" class="section level1">
 <h1>Experimental Psychopathology</h1>
-<p>Most of my work involves the building and implementation of experimental tasks that probe psychopathologically-relevant processes. In particular, I make use of <strong>classical and instrumental conditioning paradigms</strong> to study the emotions and behaviors. Given my interests, most of the time I am using these techniques to study <strong>fear and avoidance</strong>. In these tasks, I pair an inherently aversive stimulus (e.g., mild electric stimulation) with a neutral stimulus (e.g., a generic picture or sound) until the neutral stimulus is no longer neutral - it now provokes a negative emotional or behavioral response without any help from the original aversive stimulus. These responses, formally known as <strong>conditioned responses</strong>, are what I measure and what are thought to underlie the distress and impairment seen in many forms of anxiety.</p>
+<p>Most of my work involves the building and implementation of
+experimental tasks that probe psychopathologically-relevant processes.
+In particular, I make use of <strong>classical and instrumental
+conditioning paradigms</strong> to study the emotions and behaviors.
+Given my interests, most of the time I am using these techniques to
+study <strong>fear and avoidance</strong>. In these tasks, I pair an
+inherently aversive stimulus (e.g., mild electric stimulation) with a
+neutral stimulus (e.g., a generic picture or sound) until the neutral
+stimulus is no longer neutral - it now provokes a negative emotional or
+behavioral response without any help from the original aversive
+stimulus. These responses, formally known as <strong>conditioned
+responses</strong>, are what I measure and what are thought to underlie
+the distress and impairment seen in many forms of anxiety.</p>
 <p><img src="images/ocd_conditioning_nbr.png" /></p>
-<p><em>Example of classical conditioning model applied to OCD; adapted from <a href="https://www.sciencedirect.com/science/article/abs/pii/S0149763421003262">Cooper &amp; Dunsmoor, 2021, Neurosci Biobehav Rev</a></em></p>
-<p>There are many ways to measure conditioned responses. I primarily use <strong>self-report</strong> and <strong>physiological</strong> (e.g., <strong>startle blink, sweat response, heart rate</strong>) measures. In the past I have also used <strong>eye-tracking</strong> and <strong>pupilometry</strong> to assess attentional and arousal conditioned responses, and I hope to return to these methods in the future. I also currently oversee a study using <strong>virtual reality (VR)</strong> technology to modulate retention of fear learning. Finally, a major goal of my postdoc is to gain substantial experience in <strong>functional magnetic resonance imaging (fMRI)</strong>, a neuroimaging technique that allows us to assess conditioned responding at the level of the brain and its constituent circuits. An F32 from NIMH currently funds my training in this area, including the implementation of an fMRI study of category preconditioning . This involves the use of a novel task developed in the Dunsmoor lab:</p>
+<p><em>Example of classical conditioning model applied to OCD; adapted
+from <a
+href="https://www.sciencedirect.com/science/article/abs/pii/S0149763421003262">Cooper
+&amp; Dunsmoor, 2021, Neurosci Biobehav Rev</a></em></p>
+<p>There are many ways to measure conditioned responses. I primarily use
+<strong>self-report</strong> and <strong>physiological</strong> (e.g.,
+<strong>startle blink, sweat response, heart rate</strong>) measures. In
+the past I have also used <strong>eye-tracking</strong> and
+<strong>pupilometry</strong> to assess attentional and arousal
+conditioned responses, and I hope to return to these methods in the
+future. I also currently oversee a study using <strong>virtual reality
+(VR)</strong> technology to modulate retention of fear learning.
+Finally, a major goal of my postdoc is to gain substantial experience in
+<strong>functional magnetic resonance imaging (fMRI)</strong>, a
+neuroimaging technique that allows us to assess conditioned responding
+at the level of the brain and its constituent circuits. An F32 from NIMH
+currently funds my training in this area, including the implementation
+of an fMRI study of category preconditioning . This involves the use of
+a novel task developed in the Dunsmoor lab:</p>
 <p><img src="images/spoc_paradigm_cooper_f32.png" /></p>
-<p><em>Schematic of a fMRI optimized “category preconditioning” paradigm that uses MVPA decoding techniques to derive indices of neural similarity.</em></p>
+<p><em>Schematic of a fMRI optimized “category preconditioning” paradigm
+that uses MVPA decoding techniques to derive indices of neural
+similarity.</em></p>
 </div>
 <div id="quantitative-psychopathology" class="section level1">
 <h1>Quantitative Psychopathology</h1>
-<p>Although experimental techniques are at the core of my work, it’s in combination with individual differences sciences that allows it to provide answers to scientific questions regarding the nature, development, and treatment of psychopathology. In particular, I use <strong>dimensional</strong> models of psychopathology - which treat mental illness as just the extreme or less common part of a continuum of human behavior and internal processes, as opposed to qualitatively distinct categories - to understand how pathological processes differ across and within people. Part of this work involves understanding how psychopathology is organized and structured in the first place. Recent work has involved using dimension <strong>reduction techniques</strong> (e.g., exploratory factor analysis, mixture modeling) to more precisely capture the underlying psychological dimensions that span a variety of symptoms or conditions, specifically those commonly defined as anxiety-related disorders. This work is inspired by and aligns with the <a href="https://renaissance.stonybrookmedicine.edu/HITOP">Hierarchical Taxonomy of Psychopathology (HiTOP)</a>, an effort to improve our models of psychopathology.</p>
-<p><img src="images/ocir%20pid5%20efa%20score%20subscale%20coefs_ax.png" /></p>
-<p><em>Graphical reimagining of table showing predictive relations between latent maladaptive personality factors and different types of OCD symptoms (Checking, Hoarding, Neutralizing, Obsessing, Ordering, Washing) across two samples; adapted from <a href="https://journals.sagepub.com/doi/full/10.1177/10731911211070623">Cooper et al., 2022, Assessment</a></em></p>
-<p>Linking psychopathological individual differences to purportedly psychopathological processes, as measured by experimental tasks, can require a complex statistical framework to facilitate meaningful and robust inferences. <strong>Mixed effects regression</strong> (sometimes referred to as multilevel modeling) are a major part of my work and I continue to train in advanced applications of these models, including mediation frameworks and non-linear modeling. I also have training in using <strong>structural equation modeling (SEM)</strong> techniques, which provides a framework for understanding complex relations between both observed/measured variables and <em>latent</em> or unmeasured variables. Using these types of techniques allows us to test hypotheses that fully appreciate the complex systems typically involved in the psychological and biological processes that contribute to psychopathology.</p>
+<p>Although experimental techniques are at the core of my work, it’s in
+combination with individual differences sciences that allows it to
+provide answers to scientific questions regarding the nature,
+development, and treatment of psychopathology. In particular, I use
+<strong>dimensional</strong> models of psychopathology - which treat
+mental illness as just the extreme or less common part of a continuum of
+human behavior and internal processes, as opposed to qualitatively
+distinct categories - to understand how pathological processes differ
+across and within people. Part of this work involves understanding how
+psychopathology is organized and structured in the first place. Recent
+work has involved using dimension <strong>reduction techniques</strong>
+(e.g., exploratory factor analysis, mixture modeling) to more precisely
+capture the underlying psychological dimensions that span a variety of
+symptoms or conditions, specifically those commonly defined as
+anxiety-related disorders. This work is inspired by and aligns with the
+<a href="https://renaissance.stonybrookmedicine.edu/HITOP">Hierarchical
+Taxonomy of Psychopathology (HiTOP)</a>, an effort to improve our models
+of psychopathology.</p>
+<p><img
+src="images/ocir%20pid5%20efa%20score%20subscale%20coefs_ax.png" /></p>
+<p><em>Graphical reimagining of table showing predictive relations
+between latent maladaptive personality factors and different types of
+OCD symptoms (Checking, Hoarding, Neutralizing, Obsessing, Ordering,
+Washing) across two samples; adapted from <a
+href="https://journals.sagepub.com/doi/full/10.1177/10731911211070623">Cooper
+et al., 2022, Assessment</a></em></p>
+<p>Linking psychopathological individual differences to purportedly
+psychopathological processes, as measured by experimental tasks, can
+require a complex statistical framework to facilitate meaningful and
+robust inferences. <strong>Mixed effects regression</strong> (sometimes
+referred to as multilevel modeling) are a major part of my work and I
+continue to train in advanced applications of these models, including
+mediation frameworks and non-linear modeling. I also have training in
+using <strong>structural equation modeling (SEM)</strong> techniques,
+which provides a framework for understanding complex relations between
+both observed/measured variables and <em>latent</em> or unmeasured
+variables. Using these types of techniques allows us to test hypotheses
+that fully appreciate the complex systems typically involved in the
+psychological and biological processes that contribute to
+psychopathology.</p>
 </div>
 
 

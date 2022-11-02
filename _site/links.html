@@ -13,7 +13,7 @@
 
 <title>Links</title>
 
-<script src="site_libs/header-attrs-2.12/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.16/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
@@ -146,11 +146,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -414,35 +418,75 @@ div.tocify {
 
 <div id="science" class="section level1">
 <h1>Science</h1>
-<p><a href="https://www.psychologicalscience.org/">Association for Psychological Science (APS)</a></p>
-<p><a href="adaa.org">Anxiety and Depression Association of America (ADAA)</a></p>
-<p><a href="https://psychopathology.org/">Society for Research in Psychopathology (SRP)</a></p>
-<p><a href="https://sprweb.org/">Society for Psychophysiological Research (SPR)</a></p>
-<p><a href="https://improvingpsych.org/">Society for the Improvement of Psychological Science (SIPS)</a></p>
-<p><a href="http://www.sscpweb.org/">Society for a Science of Clinical Psychology (SSCP)</a></p>
-<p><a href="https://www.pcsas.org/">Psychological Clinical Science Accreditation System (PCSAS)</a></p>
-<p><a href="https://renaissance.stonybrookmedicine.edu/HITOP">Hierarchical Taxonomy of Psychopathology (HiTOP)</a></p>
+<p><a href="https://www.psychologicalscience.org/">Association for
+Psychological Science (APS)</a></p>
+<p><a href="adaa.org">Anxiety and Depression Association of America
+(ADAA)</a></p>
+<p><a href="https://psychopathology.org/">Society for Research in
+Psychopathology (SRP)</a></p>
+<p><a href="https://sprweb.org/">Society for Psychophysiological
+Research (SPR)</a></p>
+<p><a href="https://improvingpsych.org/">Society for the Improvement of
+Psychological Science (SIPS)</a></p>
+<p><a href="http://www.sscpweb.org/">Society for a Science of Clinical
+Psychology (SSCP)</a></p>
+<p><a href="https://www.pcsas.org/">Psychological Clinical Science
+Accreditation System (PCSAS)</a></p>
+<p><a href="https://sfn.org/">Society for Neuroscience (SfN)</a></p>
+<p><a href="https://sobp.org/">Society of Biological Psychiatry
+(SOBP)</a></p>
+<p><a
+href="https://renaissance.stonybrookmedicine.edu/HITOP">Hierarchical
+Taxonomy of Psychopathology (HiTOP)</a></p>
 </div>
 <div id="mental-health" class="section level1">
 <h1>Mental Health</h1>
-<p>I received most of the my clinical training in the VA system, and thus naively thought it was straightforward for find science-based mental health services everywhere (i.e., outside of the VA). I was wrong. Below are some links to help with that.</p>
-<p><a href="https://adaa.org/find-help">Anxiety and Depression Association of America: Find Help</a></p>
-<p><a href="https://www.abct.org/Help/?m=mFindHelp&amp;fa=dFindHelp">Association for Behavioral and Cognitive Therapies: Find Help</a></p>
-<p><a href="https://cptforptsd.com/cpt-provider-roster/">Cognitive Processing Therapy Provider Roster</a></p>
-<p><a href="https://contextualscience.org/civicrm/profile?gid=17&amp;reset=1&amp;force=1">Find an ACT Therapist</a></p>
-<p><a href="https://istss.org/public-resources">International Society for Traumatic Stress Studies: Public Resources</a></p>
+<p>I received most of the my clinical training in the VA system, and
+thus naively thought it was straightforward for find science-based
+mental health services everywhere (i.e., outside of the VA). I was
+wrong. Below are some links to help with that.</p>
+<p><a href="https://adaa.org/find-help">Anxiety and Depression
+Association of America: Find Help</a></p>
+<p><a
+href="https://www.abct.org/Help/?m=mFindHelp&amp;fa=dFindHelp">Association
+for Behavioral and Cognitive Therapies: Find Help</a></p>
+<p><a href="https://cptforptsd.com/cpt-provider-roster/">Cognitive
+Processing Therapy Provider Roster</a></p>
+<p><a
+href="https://contextualscience.org/civicrm/profile?gid=17&amp;reset=1&amp;force=1">Find
+an ACT Therapist</a></p>
+<p><a href="https://istss.org/public-resources">International Society
+for Traumatic Stress Studies: Public Resources</a></p>
 </div>
 <div id="professional-development" class="section level1">
 <h1>Professional Development</h1>
-<p>Finding good information on applying to PhD programs in clinical psych can be tough. Below are resources I hope are helpful for those looking into that path:</p>
-<p><a href="https://mitch.web.unc.edu/professional-development/">Mitch Prinstein’s Professional Development Resources</a></p>
-<p><a href="https://www.project-short.com/">Project SHORT (a great student-run mentoring org for grad applications)</a></p>
+<p>Finding good information on applying to PhD programs in clinical
+psych can be tough. Below are resources I hope are helpful for those
+looking into that path:</p>
+<p><a href="https://mitch.web.unc.edu/professional-development/">Mitch
+Prinstein’s Professional Development Resources</a></p>
+<p><a href="https://www.project-short.com/">Project SHORT (a great
+student-run mentoring org for grad applications)</a></p>
 </div>
 <div id="links-for-random-endorsements" class="section level1">
 <h1>Links for Random Endorsements</h1>
-<p><em>I have opinions. Some of those pertain to science-adjacent programs, apps, and techniques that a) could be helpful for others and b) the people behind these things deserve some unsolicited praise because they are great. Plus, it’s my website so I can do what I want. All opinions and endorsements are my own and do not reflect those of UT or any other entity.</em></p>
-<p><a href="https://www.zotero.org/">Zotero</a> is my reference manager of choice, and I highly recommend you give it a try. I have been a Zotero diehard for a while and this is my form of shouting my endorsement out from the tallest mountain.</p>
-<p>Scientific writing can be hard. The popular <a href="http://en.wikipedia.org/wiki/Pomodoro_Technique">Pomodoro Technique</a> is my go-to for when I need to get serious about my writing. The <a href="https://pomodoneapp.com/">PomoDoneApp</a>, which I use in conjunction with <a href="todoist.com">Todoist</a>, is my preferred app solution for this technique, and I highly recommend it.</p>
+<p><em>I have opinions. Some of those pertain to science-adjacent
+programs, apps, and techniques that a) could be helpful for others and
+b) the people behind these things deserve some unsolicited praise
+because they are great. Plus, it’s my website so I can do what I want.
+All opinions and endorsements are my own and do not reflect those of UT
+or any other entity.</em></p>
+<p><a href="https://www.zotero.org/">Zotero</a> is my reference manager
+of choice, and I highly recommend you give it a try. I have been a
+Zotero diehard for a while and this is my form of shouting my
+endorsement out from the tallest mountain.</p>
+<p>Scientific writing can be hard. The popular <a
+href="http://en.wikipedia.org/wiki/Pomodoro_Technique">Pomodoro
+Technique</a> is my go-to for when I need to get serious about my
+writing. The <a href="https://pomodoneapp.com/">PomoDoneApp</a>, which I
+use in conjunction with <a href="todoist.com">Todoist</a>, is my
+preferred app solution for this technique, and I highly recommend
+it.</p>
 </div>
 
 

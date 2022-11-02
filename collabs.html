@@ -13,7 +13,7 @@
 
 <title>Collaborators</title>
 
-<script src="site_libs/header-attrs-2.12/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.16/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
@@ -143,11 +143,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -336,7 +340,28 @@ $(document).ready(function () {
 </div>
 
 
-<p>Outside of my work with <a href="https://sites.utexas.edu/dunsmoorlab/">Dr. Joseph Dunsmoor</a> and in his lab, I collaborate on a variety of projects with other scientists. I continue to work with my primary graduate school adviser, <a href="https://angst.psych.umn.edu/">Dr. Shmuel Lissek</a>, and his <a href="https://angst.psych.umn.edu/people">graduate students</a>, as well as with my secondary adviser, <a href="https://cla.umn.edu/about/directory/profile/krueg038">Dr. Robert Krueger</a>. More recent collaborations include structural psychopathology work with Drs. <a href="https://campp.nd.edu/">David Watson</a> and <a href="https://www.knox.edu/academics/faculty/obrien-sara">Sara O’Brien</a>, biobehavioral trait measurement and prediction with <a href="https://patrickcnslab.psy.fsu.edu/">Dr. Chris Patrick</a> and <a href="https://patrickcnslab.psy.fsu.edu/wiki/index.php/Emily_Perkins">Emily Perkins</a>, and forays into affiliated fields, including global mental health with <a href="https://www.mhinnovation.net/profile/daniel-lakin">Dr. Dan Lakin</a>. I am also a member of the Neurobiological Foundations and Quantitative Methods workgroups within the <a href="https://renaissance.stonybrookmedicine.edu/">HiTOP</a> consortium.</p>
+<p>Outside of my work with <a
+href="https://sites.utexas.edu/dunsmoorlab/">Dr. Joseph Dunsmoor</a> and
+in his lab, I collaborate on a variety of projects with other
+scientists. I continue to work with my primary graduate school adviser,
+<a href="https://angst.psych.umn.edu/">Dr. Shmuel Lissek</a>, and his <a
+href="https://angst.psych.umn.edu/people">graduate students</a>, as well
+as with my secondary adviser, <a
+href="https://cla.umn.edu/about/directory/profile/krueg038">Dr. Robert
+Krueger</a>. More recent collaborations include structural
+psychopathology work with Drs. <a href="https://campp.nd.edu/">David
+Watson</a> and <a
+href="https://www.knox.edu/academics/faculty/obrien-sara">Sara
+O’Brien</a>, biobehavioral trait measurement and prediction with <a
+href="https://patrickcnslab.psy.fsu.edu/">Dr. Chris Patrick</a> and <a
+href="https://patrickcnslab.psy.fsu.edu/wiki/index.php/Emily_Perkins">Emily
+Perkins</a>, and forays into affiliated fields, including global mental
+health with <a
+href="https://www.mhinnovation.net/profile/daniel-lakin">Dr. Dan
+Lakin</a>. I am also a member of the Neurobiological Foundations and
+Quantitative Methods workgroups within the <a
+href="https://renaissance.stonybrookmedicine.edu/">HiTOP</a>
+consortium.</p>
 
 
 

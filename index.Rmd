@@ -16,7 +16,7 @@ Sam Cooper PhD
 
 <meta name="description" content="personal-professional website of Samuel Emerson Cooper, PhD.">
 
-<meta name="keywords" content="clinical psychology, neuroscience, psychopathology, anxiety, fear, conditioning, PTSD, quantitative methods, clinical science, fear generalization">
+<meta name="keywords" content="clinical psychology, neuroscience, psychopathology, anxiety, fear, conditioning, PTSD, quantitative methods, clinical science, fear generalization, fMRI, sensory preconditioning, threat, extinction">
 
 <meta name="author" content="Samuel Emerson Cooper">
 
@@ -30,8 +30,10 @@ I study human fear and anxiety, and their precipitants, mechanisms, and conseque
 
 I am currently supported by an NRSA (F32) fellowship from NIMH. This fellowship provides training in multivariate fMRI analyses and episodic memory tasks to facilitate my investigations into higher-order/abstract forms of fear generalization in anxiety-related disorders.
 
-You can find links to my [CV](https://docs.google.com/document/d/1SldleDb_AhA70YG2lC9bvojNgnqQXSPokj3dLNMhkGY/edit?usp=sharing), [email](mailto:%3Csamuel.e.cooper@gmail.com%3E), [Twitter](https://twitter.com/samcooper_phd), and various academic and open science profiles on the navbar above. For more detail on research interests and publications (plus much more jargon!), see the the research [Questions](questions.html) and [Methods](methods.html) pages.
+You can find links to my [CV](https://docs.google.com/document/d/1SldleDb_AhA70YG2lC9bvojNgnqQXSPokj3dLNMhkGY/edit?usp=sharing), [email](mailto:%3Csamuel.e.cooper@gmail.com%3E), [Twitter](https://twitter.com/samcooper_phd), and various academic and open science profiles on the navbar above. For more detail on research interests and publications (plus much more jargon!), see the the research [Questions](questions.html) and [Methods](methods.html) pages. 
+
+I am also the current editor of the [Society for a Science of Clinical Psychology (SSCP)](http://www.sscpweb.org) newsletter, [Clinical Science](http://www.sscpweb.org/clinicalscience).If interested in writing for an upcoming issue, please don't hesitate to contact me!
 
 *All recommendations and opinions are my own and do not necessarily reflect those of academic institutions with which I am affiliated.*
 
-*© Samuel Emerson Cooper 2021*
+*© Samuel Emerson Cooper 2021 - 2023*
