@@ -1,0 +1,53 @@
+---
+title: "Links"
+---
+
+# Science
+
+[Association for Psychological Science (APS)](https://www.psychologicalscience.org/)
+
+[Anxiety and Depression Association of America (ADAA)](adaa.org)
+
+[Society for Research in Psychopathology (SRP)](https://psychopathology.org/)
+
+[Society for Psychophysiological Research (SPR)](https://sprweb.org/)
+
+[Society for the Improvement of Psychological Science (SIPS)](https://improvingpsych.org/)
+
+[Society for a Science of Clinical Psychology (SSCP)](http://www.sscpweb.org/)
+
+[Psychological Clinical Science Accreditation System (PCSAS)](https://www.pcsas.org/)
+
+[Society of Biological Psychiatry (SOBP)](https://sobp.org/)
+
+[Hierarchical Taxonomy of Psychopathology (HiTOP)](https://renaissance.stonybrookmedicine.edu/HITOP)
+
+# Mental Health
+
+I received most of the my clinical training in the VA system, and thus naively thought it was straightforward for find science-based mental health services everywhere (i.e., outside of the VA). I was wrong. Below are some links to help with that.
+
+[Anxiety and Depression Association of America: Find Help](https://adaa.org/find-help)
+
+[Association for Behavioral and Cognitive Therapies: Find Help](https://www.abct.org/Help/?m=mFindHelp&fa=dFindHelp)
+
+[Cognitive Processing Therapy Provider Roster](https://cptforptsd.com/cpt-provider-roster/)
+
+[Find an ACT Therapist](https://contextualscience.org/civicrm/profile?gid=17&reset=1&force=1)
+
+[International Society for Traumatic Stress Studies: Public Resources](https://istss.org/public-resources)
+
+# Professional Development
+
+Finding good information on applying to PhD programs in clinical psych can be tough. Below are resources I hope are helpful for those looking into that path:
+
+[Mitch Prinstein's Professional Development Resources](https://mitch.web.unc.edu/professional-development/)
+
+[Project SHORT (a great student-run mentoring org for grad applications)](https://www.project-short.com/)
+
+# Links for Random Endorsements
+
+*I have opinions. Some of those pertain to science-adjacent programs, apps, and techniques that a) could be helpful for others and b) the people behind these things deserve some unsolicited praise because they are great. Plus, it's my website so I can do what I want. All opinions and endorsements are my own and do not reflect those of UT or any other entity.*
+
+[Zotero](https://www.zotero.org/) is my reference manager of choice, and I highly recommend you give it a try. I have been a Zotero diehard for a while and this is my form of shouting my endorsement out from the tallest mountain.
+
+Scientific writing can be hard. The popular [Pomodoro Technique](http://en.wikipedia.org/wiki/Pomodoro_Technique) is my go-to for when I need to get serious about my writing. The [PomoDoneApp](https://pomodoneapp.com/), which I use in conjunction with [Todoist](todoist.com), is my preferred app solution for this technique, and I highly recommend it.

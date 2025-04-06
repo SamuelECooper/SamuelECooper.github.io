@@ -1,0 +1,19 @@
+---
+title: "Questions"
+output:
+  html_document:
+    theme: flatly
+    toc: false
+---
+
+[Examples of recent scientific questions include:]{.underline}
+
+1.  How do patterns of generalized fear and avoidance, and their covariation, relate to adaptive and maladaptive personality structure?
+
+2.  Does degree of fear or avoidance generalization differ by gender, and what underlying psychological processes can help explain potential gender differences?
+
+3.  Does a novel experience, relative to a non-novel experience, promote the maintenance of a weakly encoded fear memory if both the initial conditioning and novel experience share perceptual features?
+
+4.  What is the state of the evidence for conditioning models of OCD, and are deficits in acquisition and/or extinction of conditioned fear consistently found in the disorder?
+
+5.  Can we reliably place OCD symptoms within a larger framework of adaptive personality and psychopathology, such that these symptoms can be identified as a constituent of the larger framework?
