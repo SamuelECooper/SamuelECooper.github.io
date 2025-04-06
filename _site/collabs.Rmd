@@ -1,9 +1,0 @@
----
-title: "Collaborators"
-output:
-  html_document:
-    theme: flatly
-    toc: false
----
-
-Outside of my work with [Dr. Joseph Dunsmoor](https://sites.utexas.edu/dunsmoorlab/) and in his lab at UT, I collaborate on a variety of projects with other scientists. I continue to work with my primary graduate school adviser, [Dr. Shmuel Lissek](https://angst.psych.umn.edu/), and his [graduate students](https://angst.psych.umn.edu/people), as well as with my secondary adviser, [Dr. Robert Krueger](https://cla.umn.edu/about/directory/profile/krueg038). More recent collaborations include structural psychopathology work with Drs. [David Watson](https://campp.nd.edu/) and [Sara O'Brien](https://www.saramobrien.com/), biobehavioral trait measurement and prediction with [Dr. Chris Patrick](https://patrickcnslab.psy.fsu.edu/) and [Emily Perkins](https://patrickcnslab.psy.fsu.edu/wiki/index.php/Emily_Perkins), and forays into affiliated fields, including global mental health with [Dr. Dan Lakin](https://www.mhinnovation.net/profile/daniel-lakin). I am also a member of the Neurobiological Foundations and Quantitative Methods workgroups within the [HiTOP](https://renaissance.stonybrookmedicine.edu/) consortium.
